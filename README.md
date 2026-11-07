@@ -1,12 +1,13 @@
 # Distro Reader for Hermes Agent
 
-Read independent publications in [Distro](https://distro.media) directly from Hermes Agent. The plugin connects Hermes to Distro's public Reader MCP server and bundles workflow guidance for discovery, article and book reading, news digests, visual reader rendering, premium access, and publisher tips.
+Read independent news and content from [Distro](https://distro.media) publications directly in Hermes Agent. The plugin connects Hermes to Distro's public Reader MCP server and bundles workflow guidance for discovery, article and book reading, archive research, news digests, visual reader rendering, premium access, and publisher tips.
 
 ## What it adds
 
 - **Eight MCP tools** for feeds, search, articles, books, podcasts/video series, Distro's visual reader, payment information, and tips.
 - **`distro-reader` skill** for reliable source routing, full-text reading, visual rendering, books, premium access, and payment safety.
 - **`distro-news-digest` skill** for date-filtered daily/weekly briefings with deduplication and canonical links.
+- **`distro-archive-research` skill** for evidence-linked archive analysis, counterarguments, and carefully framed trading hypotheses.
 - **No account or API key required** for public discovery and free stories.
 
 Examples:
@@ -15,7 +16,7 @@ Examples:
 - “Search Distro for reporting about decentralized AI.”
 - “Read and summarize this Distro story.”
 - “Open this story in the visual reader.”
-- “Show me this Distro book and its table of contents.”
+- “Give me some trading ideas based on the DeAI News archive.”
 - “Build a briefing from this week's Distro headlines.”
 
 ## Install
@@ -44,6 +45,8 @@ This is a portable [Agent Plugins v1](https://agent-plugins.org) package:
 plugin.json
 mcp.json
 skills/
+├── distro-archive-research/
+│   └── SKILL.md
 ├── distro-reader/
 │   ├── SKILL.md
 │   └── references/
