@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "distro-reader",
+  "version": "1.0.0",
+  "description": "Browse independent publications, search stories, read articles and books, and render Distro's visual reader through the Distro Reader MCP server.",
+  "author": {
+    "name": "Distro Media",
+    "url": "https://distro.media"
+  },
+  "homepage": "https://distro.media",
+  "repository": "https://github.com/Distro-Media/hermes-plugin-distro-reader",
+  "license": "MIT",
+  "keywords": [
+    "distro",
+    "reader",
+    "news",
+    "publishing",
+    "mcp",
+    "books",
+    "podcasts",
+    "x402"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "distro-reader": {
+          "trust": "untrusted",
+          "timeout": 120
+        }
+      }
+    }
+  }
+}
